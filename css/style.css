@@ -1,0 +1,135 @@
+/* Google font import  */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap');
+
+
+/* 
+    site color:-
+        primary color: #FF900E
+        secondary bg color: #FFF4E7
+
+        text dark-1: #131313
+        text dark: #727272
+*/
+
+/* universal style  */
+*{
+    font-family: 'Work Sans', sans-serif;
+    transition: all 500ms ease;
+}
+
+/* Body style  */
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* common css  */
+.container{
+    max-width: 80vw;
+    margin: 0 auto;
+}
+
+.btn{
+    border: 2px solid transparent;
+    outline: o;
+    color: #fff;
+    border-radius: .5em;
+    background-color: #FF900E;
+    padding: .8em 1.5em;
+    font-size: 20px;
+}
+
+/* ================= Header area start ================= */
+header{
+    background-color: #FFF4E7;
+    overflow: hidden;
+}
+
+/* Navigation style  */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+nav .logo{
+    text-transform: capitalize;
+    font-size: 1.8em;
+    margin: 0;
+}
+nav ul li{
+    display: inline-block;
+    margin-left: 2em;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #131313;
+}
+nav ul li a:hover{
+    color: #FF900E;
+}
+
+/* Header content style  */
+.header-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.header-content h1{
+    font-size: 4em;
+    margin-bottom: 5px;
+}
+.header-content p{
+    width: 70%;
+}
+.header-content img{
+    width: 100%;
+    padding: 25px 0;
+}
+/* ================= Header area end ================= */
+
+/* ================= About area start ================= */
+#about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    gap: 30px;
+}
+.about-imgs{
+    display: grid;
+    grid-template-columns: repeat(2, 220px);
+    gap: 10px;
+}
+.about-imgs img{
+    width: 100%;
+}
+.about-content{
+    width: 30%;
+}
+.about-content h2{
+    color: #131313;
+    font-size: 2em;
+    width: 70%;
+}
+.thin-text{
+    font-weight: 300;
+}
+.orrange-text{
+    color: #FF900E;
+}
+/* ================= About area end ================= */
+
+/* ================= Header area start ================= */
+/* ================= Header area end ================= */
+
+/* ================= Header area start ================= */
+/* ================= Header area end ================= */
+
+/* ================= Header area start ================= */
+/* ================= Header area end ================= */
+
+/* ================= Header area start ================= */
+/* ================= Header area end ================= */
