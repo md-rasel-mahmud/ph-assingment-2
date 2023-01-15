@@ -1,0 +1,66 @@
+@media screen and (max-width: 425px) {
+    .header-content h1 {
+        font-size: 2em;
+    }
+    p{
+        font-size: .7em;
+    }
+
+    nav ul li{
+        display: block;
+        text-align: right;
+    }
+
+    #about {
+        flex-direction: column-reverse;
+        padding: 50px 0;
+    }
+    .about-imgs {
+        grid-template-columns: repeat(1, 90%);
+        justify-content: center;
+    }
+    .about-content {
+        width: 80%;
+    }
+
+    #features-area {
+        flex-direction: column;
+    }
+    .feature-content h2 {
+        font-size: 2em;
+        width: 90%;
+    }
+    .feature-content, .feature-banner{
+        width: 90%;
+    }
+    .feature-banner {
+        margin-bottom: 80px;
+    }
+
+    
+    #fact-achivement>p {
+        width: 80%;
+    }
+    .achivement-cards {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+    .achivement-cards .card{
+        width: 70%;
+
+    }
+
+    .sponspors-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 40px 0;
+    }
+    .input-group{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}

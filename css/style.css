@@ -8,28 +8,28 @@
         secondary bg color: #FFF4E7
 
         text dark-1: #131313
-        text dark: #727272
+        text dark-2: #727272
 */
 
 /* universal style  */
-*{
+* {
     font-family: 'Work Sans', sans-serif;
     transition: all 500ms ease;
 }
 
 /* Body style  */
-body{
+body {
     margin: 0;
     padding: 0;
 }
 
 /* common css  */
-.container{
+.container {
     max-width: 80vw;
     margin: 0 auto;
 }
 
-.btn{
+.btn {
     border: 2px solid transparent;
     outline: o;
     color: #fff;
@@ -37,99 +37,347 @@ body{
     background-color: #FF900E;
     padding: .8em 1.5em;
     font-size: 20px;
+    cursor: pointer;
+}
+.btn:hover,
+.btn:focus,
+.btn:active {
+    border: 2px solid transparent;
+    outline: o;
+    color: #FF900E;
+    border-radius: .5em;
+    background-color: transparent;
+    padding: .8em 1.5em;
+    font-size: 20px;
+    cursor: pointer;
+    border: 2px solid #FF900E;
+
+}
+
+p {
+    color: #727272;
 }
 
 /* ================= Header area start ================= */
-header{
+header {
     background-color: #FFF4E7;
     overflow: hidden;
 }
 
 /* Navigation style  */
-nav{
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 0;
 }
-nav .logo{
+
+nav .logo {
     text-transform: capitalize;
     font-size: 1.8em;
     margin: 0;
 }
-nav ul li{
+
+nav ul li {
     display: inline-block;
     margin-left: 2em;
 }
-nav ul li a{
+
+nav ul li a {
     text-decoration: none;
     color: #131313;
 }
-nav ul li a:hover{
+
+nav ul li a:hover {
     color: #FF900E;
 }
 
 /* Header content style  */
-.header-content{
+.header-content {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     text-align: center;
 }
-.header-content h1{
+
+.header-content h1 {
     font-size: 4em;
     margin-bottom: 5px;
 }
-.header-content p{
+
+.header-content p {
     width: 70%;
 }
-.header-content img{
+
+.header-content img {
     width: 100%;
     padding: 25px 0;
 }
+
 /* ================= Header area end ================= */
 
 /* ================= About area start ================= */
-#about{
+#about {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     gap: 30px;
 }
-.about-imgs{
+
+.about-imgs {
     display: grid;
     grid-template-columns: repeat(2, 220px);
     gap: 10px;
 }
-.about-imgs img{
+
+.about-imgs img {
     width: 100%;
 }
-.about-content{
+
+.about-content {
     width: 30%;
 }
-.about-content h2{
+
+.about-content h2 {
     color: #131313;
     font-size: 2em;
     width: 70%;
 }
-.thin-text{
+
+.thin-text {
     font-weight: 300;
 }
-.orrange-text{
+
+.orrange-text {
     color: #FF900E;
 }
+
 /* ================= About area end ================= */
 
-/* ================= Header area start ================= */
-/* ================= Header area end ================= */
+/* ================= Features area start ================= */
+#features-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+}
 
-/* ================= Header area start ================= */
-/* ================= Header area end ================= */
+.feature-content {
+    width: 45%;
+}
 
-/* ================= Header area start ================= */
-/* ================= Header area end ================= */
+.feature-content h2 {
+    font-size: 2em;
+    width: 60%;
+    border-left: 5px solid #FF900E;
+    padding-left: 10px;
+}
 
-/* ================= Header area start ================= */
-/* ================= Header area end ================= */
+.features-box {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+.features-box h4 {
+    margin: 0;
+    color: #131313;
+}
+
+.feature-banner {
+    width: 45%;
+    position: relative;
+}
+
+.feature-banner img {
+    width: 100%;
+}
+
+
+.feature-highlight {
+    background-color: #FF900E;
+    color: #fff;
+    padding: 1.5em 3em;
+    width: fit-content;
+    border-radius: 5px;
+    position: absolute;
+    bottom: -50px;
+    left: -50px;
+}
+
+.feature-highlight h3 {
+    font-size: 2.5em;
+    margin: 0;
+    text-align: center;
+}
+
+.feature-highlight p {
+    color: #fff;
+    margin: 0;
+    text-align: center;
+
+}
+
+/* ================= Features area end ================= */
+
+
+/* ================= Achivement area start ================= */
+#fact-achivement {
+    text-align: center;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#fact-achivement h2 {
+    color: #131313;
+}
+
+#fact-achivement>p {
+    width: 40%;
+    margin: 0 auto;
+}
+
+.achivement-cards {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2em;
+}
+
+.achivement-cards .card {
+    border: 2px solid #FF900E;
+    padding: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    transition:  500ms;
+
+}
+.achivement-cards .card:hover img {
+    transform: rotateY(180deg);
+    filter: drop-shadow(0 5px 10px #000);
+}
+.achivement-cards .card::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #FFF4E7;
+    z-index: -1;
+    transition:  500ms;
+    transform: scaleY(0);
+    transform-origin: top;
+}
+.achivement-cards .card:hover::before {
+    transform: scaleY(1);
+}
+
+.achivement-cards h3 {
+    margin: 0;
+}
+
+.achivement-cards p {
+    margin: 0;
+}
+
+/* ================= Achivement area end ================= */
+
+/* ================= sponspors area start ================= */
+#sponspors {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+#sponspors h2 {
+    color: #131313;
+}
+#sponspors p {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.sponspors-list {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0;
+}
+
+.sponspors-list a img{
+    width: 120px;
+}
+.sponspors-list a{
+    filter: grayscale(100%);
+}
+.sponspors-list a:hover{
+    filter: grayscale(0);
+}
+
+
+/* ================= sponspors area end ================= */
+
+/* ========================= Contact area start ========================= */
+#contact{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: 90vh;
+    justify-content: center;
+}
+#contact h2{
+    color: #131313;
+    font-size: 2.5em;
+}
+#contact form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: fit-content;
+    padding: 30px 50px;
+    background-color: #FFF4E7;
+    border-radius: 5px;
+}
+#contact a{
+    margin-top: 20px;
+    color: blueviolet;
+    text-decoration: none;
+}
+
+
+#contact a:hover,
+#contact a:focus,
+#contact a:active{
+    margin-top: 20px;
+    color: #FF900E;
+    text-decoration: underline;
+}
+
+input,textarea{
+    border-radius: 5px;
+    outline: 0;
+    border: 2px solid #FF900E;
+    padding: 20px 10px;
+}
+input:focus,textarea:focus{
+    border-radius: 5px;
+    outline: 0;
+    box-shadow: 0 0 10px #000;
+    padding: 20px 10px;
+}
+/* ========================= Contact area start ========================= */
+/* ================= Footer area start ================= */
+.footer{
+    background-color: #FFF4E7;
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 80px;
+    border-radius: 5px;
+}
+/* ================= Footer area end ================= */
