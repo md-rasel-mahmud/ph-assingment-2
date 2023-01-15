@@ -1,4 +1,41 @@
-@media screen and (max-width: 425px) {
+/* Responsive for medium devices  */
+@media screen and (min-width: 576px) and (max-width: 768px){
+    nav ul li {
+        text-align: right;
+    }
+    
+    #about {
+        flex-direction: column-reverse;
+    }
+    .about-content {
+        width: 70%;
+    }
+    
+    #features-area {
+        flex-wrap: wrap;
+    }
+    .feature-content h2 {
+        width: 90%;
+    }
+    .feature-highlight {
+        width: fit-content;
+        bottom: -25px;
+        left: -25px;
+    }
+    .feature-highlight h3{
+        font-size: 1.5em;
+    }
+    .sponspors-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 40px 0;
+    }
+}
+
+/* Responsive for small devices  */
+@media screen and (max-width: 576px) {
     .header-content h1 {
         font-size: 2em;
     }
@@ -36,7 +73,14 @@
     .feature-banner {
         margin-bottom: 80px;
     }
-
+    .feature-highlight {
+        width: fit-content;
+        bottom: -25px;
+        left: -25px;
+    }
+    .feature-highlight h3{
+        font-size: 1.5em;
+    }
     
     #fact-achivement>p {
         width: 80%;
@@ -55,12 +99,8 @@
     .sponspors-list {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: center;
+        align-items: center;
         margin: 40px 0;
-    }
-    .input-group{
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
     }
 }
